@@ -1,0 +1,24 @@
+[project]
+name = "paper-scout"
+version = "0.1.0"
+description = "A package to filter articles from multiple repositories, based on key-words"
+authors = [
+    {name = "Felipe Marques",email = "felipealmarques02@gmail.com"}
+]
+readme = "README.md"
+requires-python = ">=3.14"
+dependencies = [
+    "requests (>=2.33.1,<3.0.0)",
+    "pandas (>=3.0.2,<4.0.0)",
+    "streamlit (>=1.56.0,<2.0.0)"
+]
+
+
+[build-system]
+requires = ["poetry-core>=2.0.0,<3.0.0"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.poetry]
+packages = [
+    { include = "paper_scout", from = "src" }
+]
